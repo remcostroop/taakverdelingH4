@@ -10,7 +10,7 @@
   .header {
     padding: 80px;
     text-align: center;
-    background: #3ca5a5;
+    background: #3ca55f;
     color: white;
   }
   
@@ -48,3 +48,51 @@
     background-color: #666;
     color: white;
   }
+  
+  .row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
